@@ -3,6 +3,8 @@ server:
 
 mybatis:
   config-location: classpath:mybatis-config.xml
+  type-aliases-package: com.ao.demo.entity
+  mapper-locations: classpath:com/ao/demo/dao/**/*.xml
 
 spring:
   datasource:
@@ -11,4 +13,8 @@ spring:
     url: jdbc:mysql:http//localhost:3306/springbootdemo
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
 
