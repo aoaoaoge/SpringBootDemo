@@ -1,4 +1,4 @@
-package com.imooc.demo.config;
+package com.ao.demo.config;
 
 public class dataSourceConfiguration {
 }
