@@ -12,7 +12,7 @@
         <!--驼峰转换,表（user_id）-> 实体（userId）-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
         <!--获取数据库主键自增-->
-        <setting name="useGenerateKey" value="true"/>
+        <!--<setting name="useGenerateKey" value="true"/>-->
         <setting name="useColumnLabel" value="true"/>
     </settings>
 </configuration>
