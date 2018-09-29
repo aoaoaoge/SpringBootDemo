@@ -15,7 +15,7 @@ public class TestController {
 
     @GetMapping("/testget")
     public String testGet(){
-        String result = testService.testGet();
+        String result = testService.testGet().get(0);
         System.out.println("--------------"+result);
         return result;
     }

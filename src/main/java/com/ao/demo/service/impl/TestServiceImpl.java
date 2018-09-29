@@ -5,6 +5,8 @@ import com.ao.demo.service.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service("testService")
 public class TestServiceImpl implements ITestService {
 
@@ -12,7 +14,7 @@ public class TestServiceImpl implements ITestService {
     ITestDao testDao;
 
     @Override
-    public String testGet() {
+    public List<String> testGet() {
         return testDao.testGet();
     }
 }

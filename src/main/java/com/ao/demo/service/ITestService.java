@@ -1,5 +1,9 @@
 package com.ao.demo.service;
 
+import java.util.List;
+
 public interface ITestService {
-   String testGet();
+
+   List<String> testGet();
+
 }

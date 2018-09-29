@@ -2,9 +2,11 @@ package com.ao.demo.dao;
 
 import org.springframework.stereotype.Repository;
 
-@Repository
+import java.util.List;
+
+@Repository("testDao")
 public interface ITestDao {
 
-    String testGet();
+    List<String> testGet();
 
 }
