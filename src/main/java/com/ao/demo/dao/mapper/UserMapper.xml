@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ao.demo.dao.IUserDao">
+
+    <!--<cache type="org.mybatis.caches.ehcache.EhcacheCache"/>-->
+
+    <insert id="addUserInfo" parameterType="com.ao.demo.entity.UserInfo">
+      insert into userInfo(
+        avatarUrl,
+        city,
+        country.
+        gender,
+        userlanguage,
+        nickName,
+        province
+      )
+        values (
+          #{avatarUrl},
+          #{city},
+          #{country},
+          #{gender},
+          #{language},
+          #{nickName},
+          #{province}
+        )
+    </insert>
+
+</mapper>
