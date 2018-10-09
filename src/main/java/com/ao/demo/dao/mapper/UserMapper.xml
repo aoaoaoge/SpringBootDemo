@@ -10,7 +10,7 @@
       insert into userInfo(
         avatarUrl,
         city,
-        country.
+        country,
         gender,
         userlanguage,
         nickName,
