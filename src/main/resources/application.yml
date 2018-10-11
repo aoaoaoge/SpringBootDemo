@@ -6,6 +6,12 @@ mybatis:
   type-aliases-package: com.ao.demo.entity
   mapper-locations: classpath*:com/ao/demo/dao/**/*.xml
 
+pagehelper:
+    helperDialect: mysql
+    reasonable: false
+    supportMethodsArguments: true
+    params: count=countSql
+
 spring:
   datasource:
     username: root
